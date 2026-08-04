@@ -1,0 +1,69 @@
+[submodule "MOE-Laravel-Core"]
+	path = MOE-Laravel-Core
+	url = https://github.com/mindofemanizer/MOE-Laravel-Core.git
+[submodule "MOE-Laravel-Auth"]
+	path = MOE-Laravel-Auth
+	url = https://github.com/mindofemanizer/MOE-Laravel-Auth.git
+[submodule "MOE-Laravel-Settings"]
+	path = MOE-Laravel-Settings
+	url = https://github.com/mindofemanizer/MOE-Laravel-Settings.git
+[submodule "MOE-Laravel-Profiles"]
+	path = MOE-Laravel-Profiles
+	url = https://github.com/mindofemanizer/MOE-Laravel-Profiles.git
+[submodule "MOE-Laravel-Foundation"]
+	path = MOE-Laravel-Foundation
+	url = https://github.com/mindofemanizer/MOE-Laravel-Foundation.git
+[submodule "MOE-Laravel-Commerce"]
+	path = MOE-Laravel-Commerce
+	url = https://github.com/mindofemanizer/MOE-Laravel-Commerce.git
+[submodule "MOE-Laravel-Inventory"]
+	path = MOE-Laravel-Inventory
+	url = https://github.com/mindofemanizer/MOE-Laravel-Inventory.git
+[submodule "MOE-Laravel-Shipping"]
+	path = MOE-Laravel-Shipping
+	url = https://github.com/mindofemanizer/MOE-Laravel-Shipping.git
+[submodule "MOE-Laravel-Finance"]
+	path = MOE-Laravel-Finance
+	url = https://github.com/mindofemanizer/MOE-Laravel-Finance.git
+[submodule "MOE-Laravel-Vendor-B2B"]
+	path = MOE-Laravel-Vendor-B2B
+	url = https://github.com/mindofemanizer/MOE-Laravel-Vendor-B2B.git
+[submodule "MOE-Laravel-Marketing"]
+	path = MOE-Laravel-Marketing
+	url = https://github.com/mindofemanizer/MOE-Laravel-Marketing.git
+[submodule "MOE-Laravel-HRM"]
+	path = MOE-Laravel-HRM
+	url = https://github.com/mindofemanizer/MOE-Laravel-HRM.git
+[submodule "MOE-Laravel-CRM"]
+	path = MOE-Laravel-CRM
+	url = https://github.com/mindofemanizer/MOE-Laravel-CRM.git
+[submodule "MOE-Laravel-Invoice"]
+	path = MOE-Laravel-Invoice
+	url = https://github.com/mindofemanizer/MOE-Laravel-Invoice.git
+[submodule "MOE-Laravel-Payment"]
+	path = MOE-Laravel-Payment
+	url = https://github.com/mindofemanizer/MOE-Laravel-Payment.git
+[submodule "MOE-Laravel-Subscription"]
+	path = MOE-Laravel-Subscription
+	url = https://github.com/mindofemanizer/MOE-Laravel-Subscription.git
+[submodule "MOE-Laravel-Notify"]
+	path = MOE-Laravel-Notify
+	url = https://github.com/mindofemanizer/MOE-Laravel-Notify.git
+[submodule "MOE-Laravel-Task"]
+	path = MOE-Laravel-Task
+	url = https://github.com/mindofemanizer/MOE-Laravel-Task.git
+[submodule "MOE-Laravel-Template"]
+	path = MOE-Laravel-Template
+	url = https://github.com/mindofemanizer/MOE-Laravel-Template.git
+[submodule "MOE-Laravel-MultiTenant"]
+	path = MOE-Laravel-MultiTenant
+	url = https://github.com/mindofemanizer/MOE-Laravel-MultiTenant.git
+[submodule "MOE-Laravel-Identifiers"]
+	path = MOE-Laravel-Identifiers
+	url = https://github.com/mindofemanizer/MOE-Laravel-Identifiers.git
+[submodule "MOE-Laravel-Content-Workflow"]
+	path = MOE-Laravel-Content-Workflow
+	url = https://github.com/mindofemanizer/MOE-Laravel-Content-Workflow.git
+[submodule "MOE-Laravel-Image-Pipeline"]
+	path = MOE-Laravel-Image-Pipeline
+	url = https://github.com/mindofemanizer/MOE-Laravel-Image-Pipeline.git
