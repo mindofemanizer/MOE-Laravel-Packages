@@ -1,0 +1,45 @@
+name: Laravel Packages CI
+
+on:
+  push:
+    paths:
+      - 'MOE-Laravel-*/**'
+    branches: [main]
+  pull_request:
+    paths:
+      - 'MOE-Laravel-*/**'
+    branches: [main]
+
+jobs:
+  detect-changes:
+    name: Detect changed packages
+    runs-on: ubuntu-latest
+    outputs:
+      packages: ${{ steps.changes.outputs.packages }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: changes
+        run: |
+          PACKAGES=$(git diff --name-only HEAD~1 HEAD 2>/dev/null | grep -oP 'MOE-Laravel-[^/]+' | sort -u | jq -R -s -c 'split("\n") | map(select(. != ""))')
+          echo "packages=$PACKAGES" >> $GITHUB_OUTPUT
+
+  test:
+    name: Test ${{ matrix.package }}
+    needs: detect-changes
+    if: fromJSON(needs.detect-changes.outputs.packages)[0] != null
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        package: ${{ fromJSON(needs.detect-changes.outputs.packages) }}
+      fail-fast: false
+    steps:
+      - uses: actions/checkout@v4
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.3'
+          extensions: dom, curl, mbstring, zip, pdo, sqlite, pdo_sqlite, bcmath
+          coverage: xdebug
+      - name: Install dependencies
+        run: cd ${{ matrix.package }} && composer install --no-progress --no-interaction --prefer-dist
+      - name: Run tests
+        run: cd ${{ matrix.package }} && vendor/bin/pest --coverage-text
