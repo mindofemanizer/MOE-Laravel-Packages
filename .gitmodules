@@ -67,3 +67,6 @@
 [submodule "MOE-Laravel-Image-Pipeline"]
 	path = MOE-Laravel-Image-Pipeline
 	url = https://github.com/mindofemanizer/MOE-Laravel-Image-Pipeline.git
+[submodule "MOE-Laravel-Idempotency"]
+	path = MOE-Laravel-Idempotency
+	url = https://github.com/mindofemanizer/MOE-Laravel-Idempotency.git
